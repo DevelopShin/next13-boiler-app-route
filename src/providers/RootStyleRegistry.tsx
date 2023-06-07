@@ -1,17 +1,18 @@
-"use client";
+'use client';
 
-import { useServerInsertedHTML } from "next/navigation";
-import { useStyledComponentsRegistry } from "./styled-components";
+import { useServerInsertedHTML } from 'next/navigation';
+
+import { useStyledComponentsRegistry } from './styled-components';
 
 export default function RootStyleRegistry({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  const [StyledComponentsRegistry, styledComponentsFlushEffect] =
-    useStyledComponentsRegistry();
+	const [StyledComponentsRegistry, styledComponentsFlushEffect] =
+		useStyledComponentsRegistry();
 
-  useServerInsertedHTML(() => <>{styledComponentsFlushEffect()}</>);
+	useServerInsertedHTML(() => <>{styledComponentsFlushEffect()}</>);
 
-  return <StyledComponentsRegistry>{children}</StyledComponentsRegistry>;
+	return <StyledComponentsRegistry>{children}</StyledComponentsRegistry>;
 }
