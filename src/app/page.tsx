@@ -1,8 +1,9 @@
+import { st } from '@/lib';
 import { ThemeToggle } from '@/ui';
 
 export default function Home() {
 	return (
-		<main className='flex min-h-full flex-col items-center justify-between p-24'>
+		<main className={style}>
 			<div>
 				<ThemeToggle />
 				<h1 className='m-3 border-2 border-yellow-700 p-1 text-center text-green-700'>
@@ -12,3 +13,7 @@ export default function Home() {
 		</main>
 	);
 }
+
+const style = st`flex min-h-full flex-col items-center justify-between p-24`();
+const style2 = st<{ v: boolean }>`${p =>
+	p.v && 'red'}flex min-h-full flex-col items-center justify-between p-24`();

@@ -34,9 +34,6 @@ dependencies:
   styled-components:
     specifier: ^6.0.0-rc.3
     version: 6.0.0-rc.3(react-dom@18.2.0)(react@18.2.0)
-  tailwind-styled-components:
-    specifier: ^2.2.0
-    version: 2.2.0(react-dom@18.2.0)(react@18.2.0)
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
@@ -4273,21 +4270,6 @@ packages:
       '@pkgr/utils': 2.4.1
       tslib: 2.5.3
     dev: true
-
-  /tailwind-merge@1.13.1:
-    resolution: {integrity: sha512-tRtRN22TDokGi2TuYSvuHQuuW6BJ/zlUEG+iYpAQ9i66msc/0eU/+HPccbPnNNH0mCPp0Ob8thaC8Uy9CxHitQ==}
-    dev: false
-
-  /tailwind-styled-components@2.2.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Ogemwk0p69aU8WE/ooJZHjqstdJgT5R6HGU6TFz2uSnveSEtvW+C6aWOjGCvCr5H/bREv0IbbQ4yODknRrLBRQ==}
-    peerDependencies:
-      react: '>= 16.8.0'
-      react-dom: '>= 16.8.0'
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      tailwind-merge: 1.13.1
-    dev: false
 
   /tailwindcss@3.3.2:
     resolution: {integrity: sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==}

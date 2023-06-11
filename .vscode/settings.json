@@ -1,18 +1,17 @@
+// .vscode/settings.json
 {
-  "scss.validate": false,
+	"scss.validate": false,
 
-  "tailwindCSS.includeLanguages": {
-    "typescript": "javascript", // if you are using typescript
-    "typescriptreact": "javascript" // if you are using typescript with react
-  },
-  "editor.quickSuggestions": {
-    "strings": true // forces VS Code to trigger completions when editing "string" content
-  },
-  "editor.autoClosingQuotes": "always",
-  "tailwindCSS.experimental.classRegex": [
-    "tw`([^`]*)", // tw`...`
-    "tw\\.[^`]+`([^`]*)`", // tw.xxx<xxx>`...`
-    "tw\\(.*?\\).*?`([^`]*)", // tw(Component)<xxx>`...`
-    "tw\\.\\w+`([^`]*)" // tw.xxx`...`
-  ]
+	"tailwindCSS.includeLanguages": {
+		"typescript": "javascript", // if you are using typescript
+		"typescriptreact": "javascript" // if you are using typescript with react
+	},
+	"editor.quickSuggestions": {
+		"strings": true // forces VS Code to trigger completions when editing "string" content
+	},
+	"editor.autoClosingQuotes": "always",
+	"tailwindCSS.experimental.classRegex": [
+		"st`([^`]*)", // tw`...`
+		"st<.*?>`([^`]*)`" // tw<...>`...`
+	]
 }
