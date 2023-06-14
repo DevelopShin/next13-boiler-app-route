@@ -1,5 +1,5 @@
 import { st } from '@/lib';
-import { ThemeToggle } from '@/ui';
+import { ThemeToggle } from '@/lib';
 
 export default function Home() {
 	return (
@@ -15,5 +15,6 @@ export default function Home() {
 }
 
 const style = st`flex min-h-full flex-col items-center justify-between p-24`();
-const style2 = st<{ v: boolean }>`${p =>
-	p.v && 'red'}flex min-h-full flex-col items-center justify-between p-24`();
+// const style = st<{ v: boolean }>`${p =>
+// 	p?.v && 'red'}flex min-h-full flex-col items-center justify-between p-24`;
+// use ==> style({v:true})
